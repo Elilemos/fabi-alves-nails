@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FBF4EE;
+  --color-cream-deep: #F3E6DC;
+  --color-blush: #EFDCD2;
+  --color-mocha: #4A342C;
+  --color-mocha-soft: #6E5347;
+  --color-taupe: #8A6F63;
+  --color-rose: #BE8C79;
+  --color-rose-deep: #A8715D;
+  --color-gold: #C9A98C;
+
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Jost", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream font-body text-mocha antialiased;
+  }
+}
